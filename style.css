@@ -1,0 +1,115 @@
+body {
+  background-color: #88D3D3;
+  font-family: Verdana, Tahoma;
+}
+
+div {
+	border-radius:5px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 1px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 1px 0 rgba(0,0,0,.1);
+}
+#controlPanel {
+	background-color: #4682B4;
+	height: 120px;
+	width: 1016px;
+	font-size: 30px;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    color: #90B4D2;
+}
+
+#synthCase {
+	background-color: blue;
+	padding: 10px;
+	width: 1018px;
+	margin-left: auto ;
+  	margin-right: auto ;
+  	box-shadow: 10px 10px 5px #5F9494;
+}
+
+#synth {
+    background-color: #4682B4;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    height: 360px;
+	width: 1016px;
+}
+
+#synthBody {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+#whiteLine {
+    background-color: #F5FFFA;
+    color: #000000;
+    height: 5px;
+    position: relative;
+    top: 1px;
+    width: 1016px;
+    z-index: 100;
+}
+
+.white {
+	float: left;
+	width: 61px;
+	height: 340px;
+  	background-color: #F4F4F4;
+  	border: 1px solid #626262;
+  	position: relative;
+  	top: 10px;
+  	left: 4px;
+ }
+ 
+.black {
+	float: left;
+	width: 33px;
+	height: 220px;
+ 	background-color: #000000;
+	border: 1px solid #626262;
+    position: absolute;
+    top: 10px;
+    z-index: 100;
+    
+    
+}
+
+div.flats {
+
+}
+
+div.flats :nth-child(1) {
+	margin-left: 46px;
+}
+div.flats :nth-child(2) {
+	margin-left: 115px;
+}
+div.flats :nth-child(3) {
+	margin-left: 237px;
+}
+div.flats :nth-child(4) {
+	margin-left: 301px;
+}
+div.flats :nth-child(5) {
+	margin-left: 365px;
+}
+div.flats :nth-child(6) {
+	margin-left: 487px;
+}
+div.flats :nth-child(7) {
+	margin-left: 556px;
+}
+div.flats :nth-child(8) {
+	margin-left: 678px;
+}
+div.flats :nth-child(9) {
+	margin-left: 742px;
+}
+div.flats :nth-child(10) {
+	margin-left: 806px;
+}
+div.flats :nth-child(11) {
+	margin-left: 928px;
+}

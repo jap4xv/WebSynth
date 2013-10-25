@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="style.css" />
+        <script src='script.js'></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>WebSynth</title>
+    </head>
+    <body>
+    	
+    <script src="jquery.js"></script>
+	<script src="script.js"></script>
+	
+    <div id="synthCase">	
+	<div id="controlPanel">
+	<i>WebSynth v1.0</i>
+	</div>
+	<div id="whiteLine"></div>
+	<div id="synth">
+		<div id="synthBody">
+			<div id="o0" class="octave">
+				<div id="3C" class="key white" ></div>
+				<div id="3D" class="key white"></div>
+				<div id="3E" class="key white"></div>
+				<div id="3F" class="key white"></div>
+				<div id="3G" class="key white"></div>
+				<div id="4A" class="key white"></div>
+				<div id="4B" class="key white"></div>
+				<div class="flats">
+					<div id="3Cs" class="key black"></div>
+					<div id="3Ds" class="key black"></div>
+					<div id="3Fs" class="key black"></div>
+					<div id="3Gs" class="key black"></div>
+					<div id="4As" class="key black"></div>
+					<div id="4Cs" class="key black"></div>
+					<div id="4Ds" class="key black"></div>
+					<div id="4Fs" class="key black"></div>
+					<div id="4Gs" class="key black"></div>
+					<div id="5As" class="key black"></div>
+					<div id="5Cs" class="key black"></div>
+				</div>
+			</div>
+			<div id="o1" class="octave">
+				<div id="4C" class="key white" ></div>
+				<div id="4D" class="key white"></div>
+				<div id="4E" class="key white"></div>
+				<div id="4F" class="key white"></div>
+				<div id="4G" class="key white"></div>
+				<div id="5A" class="key white"></div>
+				<div id="5B" class="key white"></div>
+				<div id="5C" class="key white"></div>
+				<div id="5D" class="key white"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+<!-- audio clips to trigger-->	
+<audio id="play_3C" preload="auto" >
+        <source src="audio/square_3C.mp3" type="audio/mpeg" />
+        <source src="audio/square_3C.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3D" preload="auto" >
+        <source src="audio/square_3D.mp3" type="audio/mpeg" />
+        <source src="audio/square_3D.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3E" preload="auto" >
+        <source src="audio/square_3E.mp3" type="audio/mpeg" />
+        <source src="audio/square_3E.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3F" preload="auto" >
+        <source src="audio/square_3F.mp3" type="audio/mpeg" />
+        <source src="audio/square_3F.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3G" preload="auto" >
+        <source src="audio/square_3G.mp3" type="audio/mpeg" />
+        <source src="audio/square_3G.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4A" preload="auto" >
+        <source src="audio/square_4A.mp3" type="audio/mpeg" />
+        <source src="audio/square_4A.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4B" preload="auto" >
+        <source src="audio/square_4B.mp3" type="audio/mpeg" />
+        <source src="audio/square_4B.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4C" preload="auto" >   <!-- Check audio file -->
+        <source src="audio/square_4C.mp3" type="audio/mpeg" />
+        <source src="audio/square_4C.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4D" preload="auto" >
+        <source src="audio/square_4D.mp3" type="audio/mpeg" />
+        <source src="audio/square_4D.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3Cs" preload="auto" >
+        <source src="audio/square_3Cs.mp3" type="audio/mpeg" />
+        <source src="audio/square_3Cs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3Ds" preload="auto" >
+        <source src="audio/square_3Ds.mp3" type="audio/mpeg" />
+        <source src="audio/square_3Ds.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3Fs" preload="auto" >
+        <source src="audio/square_3Fs.mp3" type="audio/mpeg" />
+        <source src="audio/square_3Fs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_3Gs" preload="auto" >
+        <source src="audio/square_3Gs.mp3" type="audio/mpeg" />
+        <source src="audio/square_3Gs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4As" preload="auto" >
+        <source src="audio/square_4As.mp3" type="audio/mpeg" />
+        <source src="audio/square_4As.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4E" preload="auto" >
+        <source src="audio/square_4E.mp3" type="audio/mpeg" />
+        <source src="audio/square_4E.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4F" preload="auto" >
+        <source src="audio/square_4F.mp3" type="audio/mpeg" />
+        <source src="audio/square_4F.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4G" preload="auto" >
+        <source src="audio/square_4G.mp3" type="audio/mpeg" />
+        <source src="audio/square_4G.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5A" preload="auto" >
+        <source src="audio/square_5A.mp3" type="audio/mpeg" />
+        <source src="audio/square_5A.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5B" preload="auto" >
+        <source src="audio/square_5B.mp3" type="audio/mpeg" />
+        <source src="audio/square_5B.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5C" preload="auto" >
+        <source src="audio/square_5C.mp3" type="audio/mpeg" />
+        <source src="audio/square_5C.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5D" preload="auto" >
+        <source src="audio/square_5D.mp3" type="audio/mpeg" />
+        <source src="audio/square_5D.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4Cs" preload="auto" >
+        <source src="audio/square_4Cs.mp3" type="audio/mpeg" />
+        <source src="audio/square_4Cs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4Ds" preload="auto" >
+        <source src="audio/square_4Ds.mp3" type="audio/mpeg" />
+        <source src="audio/square_4Ds.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4Fs" preload="auto" >
+        <source src="audio/square_4Fs.mp3" type="audio/mpeg" />
+        <source src="audio/square_4Fs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_4Gs" preload="auto" >
+        <source src="audio/square_4Gs.mp3" type="audio/mpeg" />
+        <source src="audio/square_4Gs.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5As" preload="auto" > <!-- Check audio file -->
+        <source src="audio/square_5As.mp3" type="audio/mpeg" />
+        <source src="audio/square_5As.ogg" type="audio/ogg" />
+</audio>
+<audio id="play_5Cs" preload="auto" >
+        <source src="audio/square_5Cs.mp3" type="audio/mpeg" />
+        <source src="audio/square_5Cs.ogg" type="audio/ogg" />
+</audio>
+</body>
+</html>
